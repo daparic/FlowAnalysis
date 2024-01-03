@@ -2,11 +2,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define N 8
+
+int testarray()
+{
+    char buf[N];
+    for (int i = 0; i < 10; i++) {
+        buf[i] = 0x00;
+    }
+
+    return 0;
+}
+
 void displayPersonalInfo(Person *person)
 {
     printf("Name: %s\n", person->name);
     printf("Salary: %d\n", person->salary);
     printf("Day's pay: %d\n", person->salary/person->daysWorkedInPassedMonth);
+	testarray();
 }
 
 Person* createNewPerson(char* name, int salary)
